@@ -34,32 +34,29 @@ bc = new Baseclass();
 	@Test
 	public void loginwithvalidcredential() {
 		System.out.println("test ");
-		bc.sendElement("ankita jain", hm.searchTextBox);
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		bc.clickToElement(hm.googleSearchButton);
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	//	bc.sendElement("ankita jain", hm.searchTextBox);
+		
+	//	bc.clickToElement(hm.googleSearchButton);
+		
 	}
 	
 	@Test
 	public void create_Opportunity() {
+	
 		
+	String test =	bc.customizedxpath(hm.radioBtton, "2");
+	System.out.println(test);
+	bc.clickToElement(test);
+		bc.pause(5000);
+		
+	bc.selectfromdrropdown(hm.continent, "Australia");	
 	}
 	
 	
 	
 	@AfterClass
 	public void closebrowser() {
-		
+		bc.closebrowser();
 	}
 	
 	

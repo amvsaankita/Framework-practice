@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscript.TC01_homepagefunction">
+      <class name="testscript.Level1">
         <methods>
           <include name="openbrowser"/>
-          <include name="create_Opportunity"/>
-          <include name="closebrowser"/>
-          <include name="loginwithvalidcredential"/>
+          <include name="formfill"/>
+          <include name="closesetup"/>
         </methods>
-      </class> <!-- testscript.TC01_homepagefunction -->
+      </class> <!-- testscript.Level1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

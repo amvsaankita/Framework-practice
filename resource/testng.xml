@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="example suite 1" verbose="1"  parallel="classes" thread-count="5">>
+   <test name ="test">
+   
+   <parameter name="browser" value="chrome"/>  
+   <parameter name="OS"  value="ios  11"/>  
+   
+    
+    </test>
+</suite>
